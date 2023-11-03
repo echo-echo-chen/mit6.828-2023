@@ -1,9 +1,11 @@
 // On-disk file system format.
 // Both the kernel and user programs use this header file.
 
-
+#include "types.h" //自己添加的
 #define ROOTINO  1   // root i-number
 #define BSIZE 1024  // block size
+
+typedef unsigned int uint;
 
 // Disk layout:
 // [ boot block | super block | log | inode blocks |
